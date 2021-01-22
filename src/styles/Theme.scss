@@ -1,0 +1,11 @@
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    text-align: justify;
+    box-sizing: border-box;
+    color: black;
+}
