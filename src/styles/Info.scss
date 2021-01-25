@@ -1,0 +1,23 @@
+@media only screen and (max-width: 600px) {
+  .info-master-container {
+    width: auto;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    .what-is-cookbook-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: url("../images/unsplash-image-food1.png");
+      background-size: 100%, auto;
+      background-position: center;
+
+      p {
+        width: 70%;
+      }
+    }
+  }
+}

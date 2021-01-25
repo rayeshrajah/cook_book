@@ -1,3 +1,22 @@
-@media only screen and (min-width: 600px){
-    
+@media only screen and (max-width: 600px) {
+  .intro-master-container {
+    background: url("../images/pie-image3.png");
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+    width: 100%;
+    height: 300px;
+
+    .intro-cooking-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+
+      h2 {
+        color: black;
+      }
+    }
+  }
 }
