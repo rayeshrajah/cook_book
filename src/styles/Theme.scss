@@ -2,9 +2,94 @@
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 
-* { 
-    font-family: 'Times New Roman', Times, serif;  
-    color: #343a40; 
+@import "./Icons.scss";
+
+$dark-green: #343a40;
+$light-gray: #A4A8AB;
+
+* {
+  font-family: "Times New Roman", Times, serif;
+  color: $dark-green;
 }
 
+@media only screen and (max-width: 600px) {
+  //login
+  .form-container {
+    height: 300px;
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.16);
+    display: flex;
 
+    form {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        align-self: center;
+      }
+
+      .label-input-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 30px;
+
+        label {
+          font-size: 18px;
+          margin-left: 30px;
+        }
+        input {
+          border-radius: 10px;
+          height: 20px;
+          width: 225px;
+          border: 1px $dark-green solid;
+          outline-color: black;
+          margin-left: 30px;
+        }
+      }
+      button{
+          align-self: center;
+          width: 100px;
+          height: 30px;
+          background-color: $dark-green;
+          color:$light-gray; 
+          border-radius: 5px;
+          border: 1px $light-gray solid;
+      }
+    }
+  }
+
+  //modal for signup and login
+  .modal-background {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+
+    .icon-x-circle-white {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      cursor: pointer;
+    }
+
+    .modal-front {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
+    }
+  }
+}

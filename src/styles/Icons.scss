@@ -1,0 +1,12 @@
+$iconNames: (
+    "x-circle"
+    "x-circle-white"
+);
+
+@each $name in $iconNames {
+   .icon-#{$name}{
+       background: url(../images/Icons/#{$name}.png) no-repeat;
+       width: 32px;
+       height: 32px;
+   } 
+}
